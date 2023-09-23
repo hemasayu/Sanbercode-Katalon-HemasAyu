@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>success_signUp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a5530fa-f93b-4a8a-8f0d-bdcc944194bb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>01aceb19-a117-493a-9013-d859e8fab846</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aea89b82-c3db-4fd4-b4c2-c02f96c43169</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>02ba7318-d4f9-41bf-979f-eaf3246c3acc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Sign up successful.'</defaultValue>
+      <description></description>
+      <id>01aceb19-a117-493a-9013-d859e8fab846</id>
+      <masked>false</masked>
+      <name>registerSuccess</name>
+   </variable>
+   <variable>
+      <defaultValue>'iamuser'</defaultValue>
+      <description></description>
+      <id>aea89b82-c3db-4fd4-b4c2-c02f96c43169</id>
+      <masked>false</masked>
+      <name>newUser</name>
+   </variable>
+   <variable>
+      <defaultValue>'iamuser'</defaultValue>
+      <description></description>
+      <id>02ba7318-d4f9-41bf-979f-eaf3246c3acc</id>
+      <masked>false</masked>
+      <name>newPassword</name>
+   </variable>
+</TestCaseEntity>

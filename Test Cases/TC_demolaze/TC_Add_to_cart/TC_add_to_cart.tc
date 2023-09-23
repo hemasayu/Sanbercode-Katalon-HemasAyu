@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_add_to_cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5635377-cb63-48a3-afe8-6bfdd53d306e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dfbb8279-d652-42cc-aa89-fa5a99bf44af</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dc752c57-94fd-4290-be83-32f7e149b9dd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Iphone 6 32gb'</defaultValue>
+      <description></description>
+      <id>dfbb8279-d652-42cc-aa89-fa5a99bf44af</id>
+      <masked>false</masked>
+      <name>product_iphone_6_32gb</name>
+   </variable>
+   <variable>
+      <defaultValue>'Product added'</defaultValue>
+      <description></description>
+      <id>dc752c57-94fd-4290-be83-32f7e149b9dd</id>
+      <masked>false</masked>
+      <name>alert_success_add_to_cart</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_failed_login_user_not_found</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d6c74ae-6c8f-495b-84f9-9aa26f727d61</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1be85119-2ce6-438f-ad0c-712ca39dab84</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'User does not exist.'</defaultValue>
+      <description></description>
+      <id>1be85119-2ce6-438f-ad0c-712ca39dab84</id>
+      <masked>false</masked>
+      <name>userNotExist</name>
+   </variable>
+</TestCaseEntity>

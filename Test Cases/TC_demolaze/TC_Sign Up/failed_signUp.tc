@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>failed_signUp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1ec4376f-675c-41fe-93d0-8a83c4f4a3ec</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5288f04e-d267-42fa-a977-d77a6744bfae</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e1d3145-e691-460a-b050-5912175fe560</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9920d936-c868-48eb-b84f-6b224e8dee12</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'This user already exist.'</defaultValue>
+      <description></description>
+      <id>5288f04e-d267-42fa-a977-d77a6744bfae</id>
+      <masked>false</masked>
+      <name>registerFailed</name>
+   </variable>
+   <variable>
+      <defaultValue>'iamuser1sa'</defaultValue>
+      <description></description>
+      <id>3e1d3145-e691-460a-b050-5912175fe560</id>
+      <masked>false</masked>
+      <name>registeredUser</name>
+   </variable>
+   <variable>
+      <defaultValue>'hiddenpassword'</defaultValue>
+      <description></description>
+      <id>9920d936-c868-48eb-b84f-6b224e8dee12</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
