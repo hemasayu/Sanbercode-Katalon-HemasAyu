@@ -39,3 +39,5 @@ if (WebUI.verifyAlertPresent(0) == true) {
     WebUI.acceptAlert()
 }
 
+WebUI.closeBrowser()
+
