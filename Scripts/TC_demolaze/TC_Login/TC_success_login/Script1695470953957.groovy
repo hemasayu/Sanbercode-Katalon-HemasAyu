@@ -40,3 +40,5 @@ WebUI.click(findTestObject('demoblaze/login/login_btn'))
 WebUI.verifyElementText(findTestObject('demoblaze/login/welcome_user'), WebUI.concatenate(((['Welcome ', GlobalVariable.globalUsername]) as String[]), 
         FailureHandling.STOP_ON_FAILURE))
 
+WebUI.closeBrowser()
+
