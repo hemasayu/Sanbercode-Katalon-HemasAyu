@@ -40,5 +40,5 @@ WebUI.click(findTestObject('demoblaze/homepage/cart_menu_btn'))
 
 WebUI.waitForElementPresent(findTestObject('demoblaze/cart/delete_cart_btn'), 0)
 
-WebUI.verifyElementText(findTestObject('demoblaze/cart/td_Samsung'), product_iphone_6_32gb)
+WebUI.verifyElementText(findTestObject('demoblaze/cart/cart_product_name'), product_iphone_6_32gb)
 

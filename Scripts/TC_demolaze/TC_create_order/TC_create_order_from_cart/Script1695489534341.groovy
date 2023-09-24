@@ -17,26 +17,36 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.baseUrl)
+WebUI.callTestCase(findTestCase('TC_demolaze/TC_Add_to_cart/TC_add_one_product'), [('product_iphone_6_32gb') : 'Iphone 6 32gb'
+        , ('alert_success_add_to_cart') : 'Product added'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setViewPortSize(GlobalVariable.viewPortWidth, GlobalVariable.viewPortHeight)
+WebUI.click(findTestObject('demoblaze/cart/Place_Order_btn'))
 
-WebUI.click(findTestObject('demoblaze/homepage/login_menu_btn'))
+WebUI.verifyElementPresent(findTestObject('demoblaze/purchase_form/h5_Place_order'), 0)
 
-WebUI.waitForElementPresent(findTestObject('demoblaze/login/h5_login'), 0)
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_Name'), name)
 
-WebUI.setText(findTestObject('demoblaze/login/input_username'), GlobalVariable.globalUsername)
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_Country'), country)
 
-WebUI.setText(findTestObject('demoblaze/login/input_password'), GlobalVariable.globalPassword)
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_City'), city)
 
-WebUI.click(findTestObject('demoblaze/login/login_btn'))
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_Credit_card'), cc)
 
-//if (WebUI.verifyAlertPresent(0) == true) {
-//    WebUI.dismissAlert()
-//}
-//else {
-//	WebUI.verifyTextPresent('Welcome '+ GlobalVariable.globalUsername)
-//}
-WebUI.verifyElementText(findTestObject('demoblaze/login/welcome_user'), WebUI.concatenate(((['Welcome ', GlobalVariable.globalUsername]) as String[]), 
-        FailureHandling.STOP_ON_FAILURE))
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_Month'), cc_month)
+
+WebUI.setText(findTestObject('demoblaze/purchase_form/input_Year'), cc_year)
+
+WebUI.click(findTestObject('demoblaze/purchase_form/purchase_btn'))
+
+WebUI.verifyElementPresent(findTestObject('demoblaze/purchase_form/h2_Thank_you'), 0)
+
+WebUI.verifyEqual(name, name)
+
+WebUI.verifyEqual(cc, cc)
+
+WebUI.click(findTestObject('demoblaze/purchase_form/confirmation_OK_btn'))
+
+WebUI.verifyElementPresent(findTestObject('demoblaze/homepage/categories'), 0)
+
+WebUI.closeBrowser()
 

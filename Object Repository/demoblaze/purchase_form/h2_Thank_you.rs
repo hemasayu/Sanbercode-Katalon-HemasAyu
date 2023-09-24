@@ -1,107 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h2_Iphone 6 32gb</name>
+   <name>h2_Thank_you</name>
    <tag></tag>
-   <elementGuidId>681ca018-eaed-4089-923c-c755e6b176a4</elementGuidId>
+   <elementGuidId>c50f5ac2-7c86-494a-9821-5839c4f2f227</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='tbodyid']/h2</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::h2[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[1]/body[@class=&quot;modal-open stop-scrolling&quot;]/div[@class=&quot;sweet-alert  showSweetAlert visible&quot;]/h2[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>h2.name</value>
+         <value>div.sweet-alert.showSweetAlert.visible > h2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>h2</value>
-      <webElementGuid>5374e1e9-cfdf-47e7-b6ca-1c3a5ccae7eb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>name</value>
-      <webElementGuid>c7677e7d-ed84-490c-b394-404e3737f780</webElementGuid>
+      <webElementGuid>5516d72b-0c60-42f6-bcc6-d0c7a2f245a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Iphone 6 32gb</value>
-      <webElementGuid>a0d55b72-e113-4f0b-9d83-24b8c7ad1a15</webElementGuid>
+      <value>Thank you for your purchase!</value>
+      <webElementGuid>057d680f-d9b9-486e-8eb5-98768f6a602e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tbodyid&quot;)/h2[@class=&quot;name&quot;]</value>
-      <webElementGuid>399372b2-9c93-4e2d-8cb8-fe438b3a55b0</webElementGuid>
+      <value>/html[1]/body[@class=&quot;modal-open stop-scrolling&quot;]/div[@class=&quot;sweet-alert  showSweetAlert visible&quot;]/h2[1]</value>
+      <webElementGuid>d7f7718a-5e23-4a55-a2a5-d182af5725b8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='tbodyid']/h2</value>
-      <webElementGuid>70324eab-a032-488c-91cd-d5897d0e53fe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[2]/following::h2[1]</value>
+      <webElementGuid>dc6ef634-5fd8-4bf4-8ed5-4d5185cc275a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cart'])[1]/following::h2[1]</value>
-      <webElementGuid>ac224e30-0810-4ee6-8dfb-86521b1b065a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[2]/following::h2[1]</value>
+      <webElementGuid>6f57edd5-573a-40bb-8e84-9dde8477a5f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(current)'])[1]/following::h2[1]</value>
-      <webElementGuid>d5a3a1a5-feff-4522-8f89-38ebf14f8656</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Not valid'])[1]/preceding::h2[1]</value>
+      <webElementGuid>6784d4b8-da3f-4a4c-a72e-e705e4c0202d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*includes tax'])[1]/preceding::h2[1]</value>
-      <webElementGuid>6ae5962c-1c56-4de3-8ce9-6c13b6934f7b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::h2[1]</value>
+      <webElementGuid>4b546a20-c94d-4c61-b521-324312a22480</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Iphone 6 32gb']/parent::*</value>
-      <webElementGuid>d90cf8e8-048c-4515-bb34-cedff7020276</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Thank you for your purchase!']/parent::*</value>
+      <webElementGuid>33335378-740d-4319-9759-457b56dcea31</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h2</value>
-      <webElementGuid>b5b64732-4cf8-4e41-9d4c-3ab13b786b0b</webElementGuid>
+      <value>//div[11]/h2</value>
+      <webElementGuid>6ee29702-f8c5-4251-9967-d7b43c5d7954</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h2[(text() = 'Iphone 6 32gb' or . = 'Iphone 6 32gb')]</value>
-      <webElementGuid>e9d9cc0c-4069-4839-9703-bd3c0588ea28</webElementGuid>
+      <value>//h2[(text() = 'Thank you for your purchase!' or . = 'Thank you for your purchase!')]</value>
+      <webElementGuid>743e6015-1e37-4673-91e4-13a7ed8d06eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

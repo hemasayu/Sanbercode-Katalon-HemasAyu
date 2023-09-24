@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Samsung</name>
+   <name>cart_product_name</name>
    <tag></tag>
    <elementGuidId>19e74599-0f01-4cbe-80bf-b44836fea656</elementGuidId>
    <selectorCollection>
