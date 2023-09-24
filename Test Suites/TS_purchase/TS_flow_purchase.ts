@@ -34,7 +34,7 @@
       <guid>193c0922-35b6-46a6-b015-f2ea3ccdd58a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_demolaze/TC_create_order/TC_submit_empty_fields</testCaseId>
+      <testCaseId>Test Cases/TC_demolaze/TC_create_order/TC_submit_empty_form</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
