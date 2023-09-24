@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_login_with_if_else</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51541b87-9a99-4a0b-8fc3-86931bea7d1e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0d8f35b8-3f45-4115-9b61-837b75e5285a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Wrong password.'</defaultValue>
+      <description></description>
+      <id>0d8f35b8-3f45-4115-9b61-837b75e5285a</id>
+      <masked>false</masked>
+      <name>alertFailure</name>
+   </variable>
+</TestCaseEntity>
