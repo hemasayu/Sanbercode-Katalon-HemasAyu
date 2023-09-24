@@ -17,26 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.baseUrl)
+WebUI.callTestCase(findTestCase('TC_demolaze/TC_Login/TC_success_login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setViewPortSize(GlobalVariable.viewPortWidth, GlobalVariable.viewPortHeight)
+WebUI.click(findTestObject('demoblaze/homepage/logout_menu_btn'))
 
-WebUI.click(findTestObject('demoblaze/homepage/login_menu_btn'))
+WebUI.verifyElementNotVisible(findTestObject('demoblaze/login/welcome_user'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('demoblaze/login/h5_login'), 0)
-
-WebUI.setText(findTestObject('demoblaze/login/input_username'), GlobalVariable.globalUsername)
-
-WebUI.setText(findTestObject('demoblaze/login/input_password'), GlobalVariable.globalPassword)
-
-WebUI.click(findTestObject('demoblaze/login/login_btn'))
-
-//if (WebUI.verifyAlertPresent(0) == true) {
-//    WebUI.dismissAlert()
-//}
-//else {
-//	WebUI.verifyTextPresent('Welcome '+ GlobalVariable.globalUsername)
-//}
-WebUI.verifyElementText(findTestObject('demoblaze/login/welcome_user'), WebUI.concatenate(((['Welcome ', GlobalVariable.globalUsername]) as String[]), 
-        FailureHandling.STOP_ON_FAILURE))
+WebUI.closeBrowser()
 

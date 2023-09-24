@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_submit_empty_fields</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>707c383b-ace6-4cc3-9254-4b1732a289a2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4359097a-b915-43bf-bd92-b761407345ff</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Please fill out Name and Creditcard.'</defaultValue>
+      <description></description>
+      <id>4359097a-b915-43bf-bd92-b761407345ff</id>
+      <masked>false</masked>
+      <name>alert</name>
+   </variable>
+</TestCaseEntity>

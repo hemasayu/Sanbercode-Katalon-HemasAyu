@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_user_registration</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>1</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>true</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>a93faff5-c088-44a6-904c-a61ad08a3d71</testSuiteGuid>
+   <testCaseLink>
+      <guid>a8511fd5-26e8-45dd-bd4d-637c6e4fe55a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_demolaze/TC_Sign Up/success_signUp</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>8b135151-090a-44e1-b732-76b548534df0</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/demoblaze_new_user</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>01aceb19-a117-493a-9013-d859e8fab846</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8b135151-090a-44e1-b732-76b548534df0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newUser</value>
+         <variableId>aea89b82-c3db-4fd4-b4c2-c02f96c43169</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8b135151-090a-44e1-b732-76b548534df0</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>newPassword</value>
+         <variableId>02ba7318-d4f9-41bf-979f-eaf3246c3acc</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0de6bfea-8849-405e-bc2b-aa19b18ee379</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_demolaze/TC_Sign Up/failed_signUp</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>56bd1641-3077-4fca-b665-2dd77c4b21a7</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/demoblaze_new_user</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5288f04e-d267-42fa-a977-d77a6744bfae</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3e1d3145-e691-460a-b050-5912175fe560</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9920d936-c868-48eb-b84f-6b224e8dee12</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -17,26 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.baseUrl)
+WebUI.callTestCase(findTestCase('TC_demolaze/TC_Add_to_cart/TC_add_one_product'), [('product_iphone_6_32gb') : 'Iphone 6 32gb'
+        , ('alert_success_add_to_cart') : 'Product added'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setViewPortSize(GlobalVariable.viewPortWidth, GlobalVariable.viewPortHeight)
+WebUI.click(findTestObject('demoblaze/cart/Place_Order_btn'))
 
-WebUI.click(findTestObject('demoblaze/homepage/login_menu_btn'))
+WebUI.verifyElementPresent(findTestObject('demoblaze/purchase_form/h5_Place_order'), 0)
 
-WebUI.waitForElementPresent(findTestObject('demoblaze/login/h5_login'), 0)
+WebUI.click(findTestObject('demoblaze/purchase_form/purchase_btn'))
 
-WebUI.setText(findTestObject('demoblaze/login/input_username'), GlobalVariable.globalUsername)
+WebUI.waitForAlert(0)
 
-WebUI.setText(findTestObject('demoblaze/login/input_password'), GlobalVariable.globalPassword)
+WebUI.verifyAlertPresent(0)
 
-WebUI.click(findTestObject('demoblaze/login/login_btn'))
+if (WebUI.verifyAlertPresent(0) == true) {
+    alertPurchase = WebUI.getAlertText()
 
-//if (WebUI.verifyAlertPresent(0) == true) {
-//    WebUI.dismissAlert()
-//}
-//else {
-//	WebUI.verifyTextPresent('Welcome '+ GlobalVariable.globalUsername)
-//}
-WebUI.verifyElementText(findTestObject('demoblaze/login/welcome_user'), WebUI.concatenate(((['Welcome ', GlobalVariable.globalUsername]) as String[]), 
-        FailureHandling.STOP_ON_FAILURE))
+    WebUI.verifyMatch(alertPurchase, alert, false)
+
+    WebUI.acceptAlert()
+}
+
+WebUI.click(findTestObject('demoblaze/purchase_form/close_form_btn'))
+
+WebUI.closeBrowser()
 

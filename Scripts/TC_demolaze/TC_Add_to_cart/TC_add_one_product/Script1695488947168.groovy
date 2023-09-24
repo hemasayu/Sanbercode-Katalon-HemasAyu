@@ -21,22 +21,24 @@ WebUI.openBrowser(GlobalVariable.baseUrl)
 
 WebUI.setViewPortSize(GlobalVariable.viewPortWidth, GlobalVariable.viewPortHeight)
 
-WebUI.click(findTestObject('demoblaze/homepage/login_menu_btn'))
+WebUI.click(findTestObject('demoblaze/homepage/product_Iphone_6_32gb'))
 
-WebUI.waitForElementPresent(findTestObject('demoblaze/login/h5_login'), 0)
+WebUI.verifyElementText(findTestObject('demoblaze/cart/h2_product_name'), product_iphone_6_32gb)
 
-WebUI.setText(findTestObject('demoblaze/login/input_username'), GlobalVariable.globalUsername)
+WebUI.click(findTestObject('demoblaze/cart/add_to_cart_btn'))
 
-WebUI.setText(findTestObject('demoblaze/login/input_password'), GlobalVariable.globalPassword)
+if (WebUI.verifyAlertPresent(0) == true) {
+    //    WebUI.delay(3)
+    //
+    //    alertText = WebUI.getAlertText(FailureHandling.OPTIONAL)
+    //
+    //    WebUI.verifyMatch(alertText, alert_success_add_to_cart, false)
+    WebUI.acceptAlert()
+}
 
-WebUI.click(findTestObject('demoblaze/login/login_btn'))
+WebUI.click(findTestObject('demoblaze/homepage/cart_menu_btn'))
 
-//if (WebUI.verifyAlertPresent(0) == true) {
-//    WebUI.dismissAlert()
-//}
-//else {
-//	WebUI.verifyTextPresent('Welcome '+ GlobalVariable.globalUsername)
-//}
-WebUI.verifyElementText(findTestObject('demoblaze/login/welcome_user'), WebUI.concatenate(((['Welcome ', GlobalVariable.globalUsername]) as String[]), 
-        FailureHandling.STOP_ON_FAILURE))
+WebUI.waitForElementPresent(findTestObject('demoblaze/cart/delete_cart_btn'), 0)
+
+WebUI.verifyElementText(findTestObject('demoblaze/cart/cart_product_name'), product_iphone_6_32gb)
 
